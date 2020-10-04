@@ -1,35 +1,9 @@
 # MMM-COVID-19
 MM module for current COVID-19 virus status. (Will be deprecated, use alternative)
 
-## NOTICE FOR NOT SUPPORTING ANYMORE
-- When I created this module, there was no COVID-19 related modules, so I made it by myself. This module consumes data from the FIRST original root source from [Johns Hopkins University Center for Systems Science and Engineering (JHU CCSE)](https://github.com/CSSEGISandData/COVID-19) But JHU CCSE changes its data format too often and without notice, so this module is not stable. (I'm very disappointed about JHU CCSS data management)
-
-And at this moment, there are at least two working COVID-19 related modules in MagicMirror. So I'll quit supporting this module. Use alternatives.
-- [MyCovid19](https://github.com/sdetweil/MyCovid19)
-- [MMM-COVID19](https://github.com/bibaldo/MMM-COVID19)
-
-Sorry, and thank you for things.
-
-
-
 
 ## Credits
 This data is derived from [Johns Hopkins University Center for Systems Science and Engineering (JHU CCSE)](https://github.com/CSSEGISandData/COVID-19)
-
-> At this moment(Mar. 22.) US and France don't provide recovered data any more. I'm not sure it will be fixed or not.
-
-
-
-
-
-
-## Screenshot
-![](https://raw.githubusercontent.com/eouia/MMM-COVID-19/master/covid.png)
-
-## New Updates
-### **`2.1.1` (2020-03-22)**
-- Fixed: Minor fix for safe initialization for regions which has no data.
-- Added: thousands separator for numbers
 
 
 ## Install
@@ -122,37 +96,3 @@ I've refactored to reduce CPU and memory usage. But if you still feel some issue
 }
 ```
 - Disable `drawGraph`. Set it `false`
-
-
-
-
-#### Deprecated options
-> I think this would be overspec. So I removed.
-
-- **`detailProvice`**
-- **`logProvinceCountry`**
-- **`logOnce`**
-- **`sortOrder`**
-
-## UPDATE HISTORY
-### **`2.1.0` (2020-03-16)**
-- Whole refactored. (Orignial source format is changed.)
-- Changed: the territory name rule is changed. (See configuration section)
-- Changed: reduction of CPU usage (I hope. See note section also)
-- added: `drawGraph` option to show graph or not.
-- added: `logTerritory` option to log territory names.
-
-### **`2.0.0` (2020-03-04)**
-- Whole new build. (`npm install` is needed to update)
-- Removed: depedency of external API. Data is derived from original source directly.
-- Removed: some overspec config options.
-- Added: past 7-days bar graph.
-- Added: new confirmed, new deaths, new recovered of 1 day before (... of update date)
-- Added : info section, last reported time, distance from me.
-- Changed : multi pinned. pin key format changed.
-- Chagned : more controllable by CSS.
-
-
-
-
-## Don't Panic! This is not Z-Virus...
